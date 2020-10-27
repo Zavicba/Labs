@@ -5,7 +5,7 @@ import Catalogo from "./Catalogo/Catalogo.js"
 
 function App() {
   return (
-   <div>
+   <div class="container-fluid">
     <SearchBar></SearchBar>
     <Catalogo></Catalogo>
    </div>
