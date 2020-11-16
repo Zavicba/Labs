@@ -1,1 +1,1 @@
-Proyecto Henry Labs del alumno Emanuel Zalazar del cusrso webpart02 
+Proyecto Henry Labs del alumno Emanuel Zalazar del curso webpart02 
