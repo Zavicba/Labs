@@ -6,7 +6,6 @@ import Catalogo from "./components/Catalogo/Catalogo"
 
 function App() {
   
-
   return (
    <div className="container-fluid" id="appcontainer">
     <SearchBar></SearchBar>

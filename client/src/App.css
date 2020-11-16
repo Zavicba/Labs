@@ -1,4 +1,6 @@
 #appcontainer {
-    background: "tablas-madera-tienda-ropa-borrosa-fondo_1253-47.jpg";
-    background-repeat: no-repeat;
+    background: url("./tabla-vacia-tablero-madera-delante-fondo-borroso-perspectiva-madera-clara-sobre-desenfoque-supermercado-puede-usar-exhibir-o-montar-sus-productos-simulacro-mostrar-producto_2379-484.jpg");
+    height: 100vh;
+    background-size: 100%;
+    background-position: center;
 }

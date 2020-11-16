@@ -9,7 +9,7 @@ const store = createStore(
 
 export default store;
 
-/* function persistentReducer(reducer){
+ /* function persistentReducer(reducer){
     
 return (state,action)=>{
     
@@ -22,6 +22,6 @@ return (state,action)=>{
 let paramaux= JSON.parse(localStorage.getItem("reduxState"))
 
 
- const store = createStore(persistentReducer(rootReducer), paramaux||undefined)
+ const store = createStore(persistentReducer(rootReducer), paramaux||undefined,  applyMiddleware(thunk))
 
- export default store; */
+ export default store;  */

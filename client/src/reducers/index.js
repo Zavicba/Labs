@@ -1,7 +1,8 @@
 
 const initialState = {
     products: [],
-    query: ""
+    query: "",
+    querySearched: []
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -16,6 +17,11 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 query: action.payload
             }
+        case "SET_QUERY_SEARCHED":
+            return {
+                ...state,
+                querySearched: state.querySearched.concat(action.payload)
+            }    
         default: return state
 
     }

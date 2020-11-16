@@ -6,3 +6,7 @@ export function setProducts(string, products) {
 export function setQuery (string) {
     return { type: "SET_QUERY", payload: string}
 }
+
+export function setQuerySearched (string) {
+    return { type: "SET_QUERY_SEARCHED", payload: string}
+}
