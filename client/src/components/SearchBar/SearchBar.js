@@ -2,13 +2,6 @@ import React, { useState } from "react";
 import { setProducts, setQuery, setQuerySearched } from "../../actions/index"
 import { connect } from "react-redux";
 
-/* const searchCache = products.filter(function(el){
-         return el === string
-     })
-       */
-
-
-
 
 const SearchBar = ({ setProducts, setQuery, products, querySearched, setQuerySearched }) => {
 
@@ -42,7 +35,6 @@ const SearchBar = ({ setProducts, setQuery, products, querySearched, setQuerySea
         const response = await searchProducts(string)
         if (response === "productExist") {
             setQuery(string)
-            setQuerySearched(string)
         } else {
             setProducts(string, response)
             setQuery(string)
