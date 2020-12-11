@@ -4,11 +4,14 @@ import './App.css';
 import SearchBar from "./components/SearchBar/SearchBar"
 import Catalogo from "./components/Catalogo/Catalogo"
 
+
 function App() {
   
   return (
    <div className="container-fluid" id="appcontainer">
-    <SearchBar></SearchBar>
+     
+     <SearchBar ></SearchBar>
+     
     <Catalogo></Catalogo>
    </div>
 

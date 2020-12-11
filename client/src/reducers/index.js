@@ -2,7 +2,11 @@
 const initialState = {
     products: [],
     query: "",
-    querySearched: []
+    querySearched: [],
+    paginated: false,
+    pageNumber: 1,
+    numberOfPages: 5,
+
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -21,7 +25,17 @@ const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 querySearched: state.querySearched.concat(action.payload)
-            }    
+            }
+        case "SET_PAGINATED":
+            return {
+                ...state,
+                paginated: !(state.paginated)              
+            }
+        case "SET_PAGE_NUMBER":
+            return {
+                ...state,
+                pageNumber: action.payload
+            }               
         default: return state
 
     }

@@ -10,3 +10,13 @@ export function setQuery (string) {
 export function setQuerySearched (string) {
     return { type: "SET_QUERY_SEARCHED", payload: string}
 }
+
+export function setPaginated () {
+    return { type: "SET_PAGINATED"}
+}
+
+export function setPageNumber(value) {
+    return { type: "SET_PAGE_NUMBER" , payload: value}
+}
+
+

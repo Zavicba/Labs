@@ -1,3 +1,24 @@
-#container {
-    max-width: 100px;
+#containerDiv{
+    display: grid;
+    grid-template-columns: 7rem 40rem;
+    grid-gap: 5px 5px;
+    justify-items: center;
+    grid-template-areas: "filter prod prod" "filter prod prod" "filter prod prod" ;
+    justify-content: space-between;
+    padding-top: 20px;
+    background-color: #F4F4F4;
+    border-radius: 8px;
+}   
+
+#prodDiv {
+    grid-area: prod;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #F4F4F4;
+    padding: 10px 0px 10px 0px;
+}
+#filterBar {
+    grid-area: filter;
+    position: fixed
 }
